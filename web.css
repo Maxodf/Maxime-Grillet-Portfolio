@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+p{
+ font-family:  'Inconsolata', monospace;
+}
+
+
 
 body {
     margin:0;
@@ -14,6 +21,11 @@ body {
   margin-top: 0;
   }
   
+  nav{
+    background-color: transparent;
+    font-weight: 600;
+  }
+  
   
   
   #underdev{
@@ -21,14 +33,14 @@ body {
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: "consolas";
+    font-family: 'Inconsolata', monospace;
     font-size: max(1vw, 10px);
   }
   
   .copyright{
     text-align: right;
     color: #ff003c;
-    font-family: 'consolas';
+    font-family: 'Inconsolata', monospace;
     font-size: max(1vw, 10px);
     margin-bottom: 20px;
   }
@@ -66,9 +78,9 @@ body {
     .containeuuur {
       color: rgb(0, 0, 0);
       font-size: 1.5rem;
-      display: flex;
+      font-weight: 600;
       flex-direction: column;
-      font-family: "consolas";
+      font-family: 'Inconsolata', monospace;
     }
   
 
@@ -92,12 +104,12 @@ body {
   
   .typewriter p {
       font-size: max(2vw, 15px);
-      font-family: 'consolas';
+      font-family: 'Inconsolata', monospace;
       overflow: hidden;
       white-space: nowrap;
       position: relative;
       color: rgb(0, 0, 0);
-      font-family: 'consolas', arial;
+      font-family: 'Inconsolata', monospace, arial;
       animation: typing 2s steps(19);
   }
   
@@ -128,7 +140,7 @@ body {
   }
   
   .stack span {
-    font-weight: bold;
+    font-weight: 800;
     grid-row-start: 1;
     grid-column-start: 1;
     font-size: 4rem;
@@ -277,7 +289,7 @@ body {
   
   
   .texte{
-    font-family: 'consolas';
+    font-family: 'Inconsolata', monospace;
   }
   
   
@@ -299,320 +311,313 @@ body {
 
 
 
-nav{
-  background-color: transparent;
-}
-
-.nav-item{
-  font-size: 25px;
-  font-family: "consolas";
-  margin-bottom: 0;
-}
-
-#link{
-  color: black;
-}
-
-#link:hover{
-  color: #ff003c;
-  animation: text-shadow 1s;
+  .nav-item{
+    font-size: 25px;
+    font-family: 'Inconsolata', monospace;;
+    margin-bottom: 0;
   }
   
-
-#active{
-  color: #ff003c;
-}
-#active:hover{
-  color: #00eeff;
-  animation: text-shadow 1s;
-  }
-
-
-.sidenav {
-  z-index: 999;
-  height: 100%;
-  width: 100vw;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: -100vw;
-  background-color: #ffffff;
-  padding-top: 60px;
-  transition: right 0.5s ease;
-}
-
-.space{
-  color: #ff003c;
-  margin-top: 20px;
-}
-.space2{
-  color: #000000;
-  margin-top: 20px;
-}
-
-/* Sidenav menu links */
-.sidenav a {
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'consolas';
-  display: block;
-  transition: 0.3s;
-  margin-left: 15px;  
-}
-
-.sidenav a:hover {
-color: #00eeff;
-}
-
-.sidenav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Active class */
-.sidenav.active {
-  right: 0;
-}
-
-/* Close btn */
-.sidenav .close {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  font-size: 50px;
-  color: #ff003c;
-}
-
-/* Icône burger */
-.burger-icon span {
-  display: block;
-  width: 65px;
-  height: 50px;
-  /* background-image: url(./img/fleche.png); */
-  margin: 6px 0;
-  display: none;
-}
-
-.swipe{
-  color: #ff003c;
-  text-decoration: none;
-  font-size: 40px; 
-}
-
-#openBtn{
-  text-decoration: none;
-  display: none;
-}
-
-#closeBtn{
-  margin-top: 10px;
-  margin-left: 90vw;
-}
-
-.socialnetwork{
-  margin-top: 50px;
-}
-
-.swipe{
-  font-size: 50px;
-}
-
-
-
-
-@media screen and (max-width: 1600px) {
-
-  .text{
-    margin-top: 50px;
+  #link{
+    color: black;
   }
   
-  .bouton{
-    margin-bottom: 50px;
-  }
-  
-  .reseaux{
-    font-size: 20px;
-  }
-  
-  
-  }
-  
-  @media screen and (max-width: 1300px) {
-    .stack {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin-top: 0px;
-    }
-  
-  
-  
-    .text{
-      margin-top: 10px;
-      margin-bottom: 100px;
+  #link:hover{
+    color: #ff003c;
+    animation: text-shadow 1s;
     }
     
   
+  #active{
+    color: #ff003c;
+  }
+  #active:hover{
+    color: #00eeff;
+    animation: text-shadow 1s;
+    }
+  
+  #mySidenav{
+    background-color: white;
+    z-index: 999;
+  }
+  
+  .sidenav {
+    z-index: 999;
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -100vw;
+    background-color: #ffffff;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+  }
+  
+  .space{
+    color: #ff003c;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .space2{
+    color: #000000;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;;
+    display: block;
+    transition: 0.3s;
+    margin-left: 15px;  
+  }
+  
+  .sidenav a:hover {
+  color: #00eeff;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    right: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 50px;
+    color: #ff003c;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 65px;
+    height: 50px;
+    /* background-image: url(./img/fleche.png); */
+    margin: 6px 0;
+    display: none;
+  }
+  
+  .swipe{
+    color: #ff003c;
+    text-decoration: none;
+    font-size: 40px; 
+  }
+  
+  #openBtn{
+    text-decoration: none;
+    display: none;
+  }
+  
+  #closeBtn{
+    margin-top: 10px;
+    margin-left: 90vw;
+  }
+  
+  .socialnetwork{
+    margin-top: 50px;
+  }
+  
+  .swipe{
+    font-size: 50px;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 1600px) {
+  
+    .text{
+      margin-top: 50px;
+    }
+    
+    .bouton{
+      margin-bottom: 50px;
+    }
+    
     .reseaux{
       font-size: 20px;
     }
-    .nav-item{
-      font-size: 20px;
-      font-family: "consolas";
-      margin-bottom: 0;
+    
+    
     }
+    
+    @media screen and (max-width: 1300px) {
+      .stack {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+      }
+    
+    
+    
+      .text{
+        margin-top: 10px;
+        margin-bottom: 100px;
+      }
+      
+    
+      .reseaux{
+        font-size: 20px;
+      }
+      .nav-item{
+        font-size: 20px;
+        font-family: 'Inconsolata', monospace;
+        margin-bottom: 0;
+      }
+    
+      #underdev{
+        background: linear-gradient(120deg,#00eeff 0%,#00eeff 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Inconsolata', monospace;
+        font-size: 15px;
+      }
+      
+      .copyright{
+        text-align:right;
+        color: #ff003c;
+        font-family: 'Inconsolata', monospace;;
+        font-size: 15px;
+      }
+    
+      
+      
+      
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (max-width: 990px) {
   
+  
+      .reseaux{
+        font-size: 15px;
+        margin-bottom: 0px;
+        margin-left: 10px;
+      }
+    
+        .ul1{
+          top: 0;
+          display: flex;
+       
+         }
+    
+    
+    
+    .noespace{
+      margin-top: 0px;
+      margin-bottom: 10px;
+      }
+    
+      /* #link{
+        display: none;
+      } */
+    
+      .nav-item{
+        font-size: 15px;
+        font-family: 'Inconsolata', monospace;
+        margin-bottom: 0;
+        margin-left: 10px;
+      }
+  
+    
     #underdev{
       background: linear-gradient(120deg,#00eeff 0%,#00eeff 100%);
       background-clip: border-box;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: "consolas";
+      font-family: 'Inconsolata', monospace;
       font-size: 15px;
+      text-align: left;
     }
     
     .copyright{
       text-align:right;
       color: #ff003c;
-      font-family: 'consolas';
+      font-family: 'Inconsolata', monospace;;
       font-size: 15px;
+    
     }
+    
+    .text{
+      margin-top: 80px;
+    }
+    
+    .ul2{
+      text-align: center;
+    }
+    
+    
+    
+    }
+    
   
     
+  
     
+  @media screen and (max-width: 799px) {
+  
+  
+      
+  #link{
+    display: none;
+  }
+  
+  .burger-icon span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    /* background-image: url(./img/faviconblack.png); */
+    background-color: #000000;
+    margin: 6px 0;
     
   }
   
+  #openBtn{
+    text-decoration: none;
+    display: block;
+    position: fixed;
+    z-index: 9;
+  
+  }
   
   
-  
-  
-  
-  
-  
-  @media screen and (max-width: 990px) {
-
-
-    .reseaux{
-      font-size: 15px;
-      margin-bottom: 0px;
-      margin-left: 10px;
-    }
-  
-      .ul1{
-        top: 0;
-        display: flex;
-     
-       }
-  
-  
-  
-  .noespace{
-    margin-top: 0px;
-    margin-bottom: 10px;
-    }
-  
-    /* #link{
-      display: none;
-    } */
-  
-    .nav-item{
-      font-size: 15px;
-      font-family: "consolas";
-      margin-bottom: 0;
-      margin-left: 10px;
-    }
-
-  
-  #underdev{
+   #underdev{
     background: linear-gradient(120deg,#00eeff 0%,#00eeff 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: "consolas";
+    font-family: 'Inconsolata', monospace;
     font-size: 15px;
-    text-align: left;
-  }
-  
-  .copyright{
-    text-align:right;
-    color: #ff003c;
-    font-family: 'consolas';
-    font-size: 15px;
-  
-  }
-  
-  .text{
-    margin-top: 80px;
-  }
-  
-  .ul2{
     text-align: center;
   }
   
-  
-  
-  }
-  
-
-  
-
-  
-@media screen and (max-width: 799px) {
-
-  .texte{
+  .copyright{
+    text-align:center;
+    color: #ff003c;
+    font-family: 'Inconsolata', monospace;;
     font-size: 15px;
+  
   }
-
+  
+  
+  }
+  
     
-#link{
-  display: none;
-}
-
-.burger-icon span {
-  display: block;
-  width: 25px;
-  height: 5px;
-  /* background-image: url(./img/faviconblack.png); */
-  background-color: #000000;
-  margin: 6px 0;
-  
-}
-
-#openBtn{
-  text-decoration: none;
-  display: block;
-  margin-left: 20px;
-
-}
-
-
- #underdev{
-  background: linear-gradient(120deg,#00eeff 0%,#00eeff 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "consolas";
-  font-size: 15px;
-  text-align: center;
-}
-
-.copyright{
-  text-align:center;
-  color: #ff003c;
-  font-family: 'consolas';
-  font-size: 15px;
-
-}
-
-
-}
-
-  
-  
-  
-  
-  
-  
-  
-  

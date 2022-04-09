@@ -1,24 +1,24 @@
   
-var letexte = 'website under development...';
-var montimer;
-var cmpt = 0;
-function typewriter(){
-   lelien = document.getElementById('underdev');
-   if(cmpt < letexte.length){
-      courant = lelien.innerHTML.substring(0, lelien.innerHTML.length -1);
-      courant += letexte.charAt(cmpt)+" ";
-      lelien.innerHTML = courant;
-   }
-   else{
-      lelien.innerHTML = "";
-      cmpt = -1;
-   }
-   cmpt++;
-   setTimeout("typewriter()",150);
-}
-window.onload = function(){
-   typewriter();
-}
+// var letexte = 'website under development...';
+// var montimer;
+// var cmpt = 0;
+// function typewriter(){
+//    lelien = document.getElementById('underdev');
+//    if(cmpt < letexte.length){
+//       courant = lelien.innerHTML.substring(0, lelien.innerHTML.length -1);
+//       courant += letexte.charAt(cmpt)+" ";
+//       lelien.innerHTML = courant;
+//    }
+//    else{
+//       lelien.innerHTML = "";
+//       cmpt = -1;
+//    }
+//    cmpt++;
+//    setTimeout("typewriter()",150);
+// }
+// window.onload = function(){
+//    typewriter();
+// }
 
 
 var c = document.getElementById("c");
@@ -65,3 +65,22 @@ function draw()
 }
 
 setInterval(draw, 15);
+
+
+
+var sidenav = document.getElementById("mySidenav");
+var openBtn = document.getElementById("openBtn");
+var closeBtn = document.getElementById("closeBtn");
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
+}

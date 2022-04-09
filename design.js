@@ -1,24 +1,24 @@
   
-var letexte = 'website under development...';
-var montimer;
-var cmpt = 0;
-function typewriter(){
-   lelien = document.getElementById('underdev');
-   if(cmpt < letexte.length){
-      courant = lelien.innerHTML.substring(0, lelien.innerHTML.length -1);
-      courant += letexte.charAt(cmpt)+" ";
-      lelien.innerHTML = courant;
-   }
-   else{
-      lelien.innerHTML = "";
-      cmpt = -1;
-   }
-   cmpt++;
-   setTimeout("typewriter()",150);
-}
-window.onload = function(){
-   typewriter();
-}
+// var letexte = 'website under development...';
+// var montimer;
+// var cmpt = 0;
+// function typewriter(){
+//    lelien = document.getElementById('underdev');
+//    if(cmpt < letexte.length){
+//       courant = lelien.innerHTML.substring(0, lelien.innerHTML.length -1);
+//       courant += letexte.charAt(cmpt)+" ";
+//       lelien.innerHTML = courant;
+//    }
+//    else{
+//       lelien.innerHTML = "";
+//       cmpt = -1;
+//    }
+//    cmpt++;
+//    setTimeout("typewriter()",150);
+// }
+// window.onload = function(){
+//    typewriter();
+// }
 
 
 var c = document.getElementById("c");

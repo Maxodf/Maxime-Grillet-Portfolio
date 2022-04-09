@@ -1,4 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+p{
+ font-family:  'Inconsolata', monospace;
+}
+
 body {
   margin:0;
   padding:0;
@@ -22,14 +28,14 @@ margin-top: 0;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "consolas";
+  font-family: 'Inconsolata', monospace;
   font-size: max(1vw, 10px);
 }
 
 .copyright{
   text-align: right;
   color: #ff003c;
-  font-family: 'consolas';
+  font-family: 'Inconsolata', monospace;
   font-size: max(1vw, 10px);
   margin-bottom: 20px;
 }
@@ -51,7 +57,7 @@ margin-top: 0;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    font-family: "consolas";
+    font-family: 'Inconsolata', monospace;;
   }
 
 
@@ -64,12 +70,12 @@ margin-top: 0;
 
 .typewriter p {
     font-size: max(2vw, 15px);
-    font-family: 'consolas';
+    font-family: 'Inconsolata', monospace;;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
     color: rgb(0, 0, 0);
-    font-family: 'consolas', arial;
+    font-family: 'Inconsolata', monospace;
     animation: typing 2s steps(20);
 }
 
@@ -98,6 +104,10 @@ margin-top: 0;
     margin-bottom: 50px;
 }
 
+nav{
+  background-color: transparent;
+  font-weight: 600;
+}
 
 
 
@@ -109,7 +119,7 @@ margin-top: 0;
 }
 
 .stack span {
-  font-weight: bold;
+  font-weight: 800;
   grid-row-start: 1;
   grid-column-start: 1;
   font-size: 4rem;
@@ -206,7 +216,7 @@ margin-top: 0;
     backface-visibility: hidden;
     text-decoration: none;
     overflow: hidden;
-    font-family: 'consolas';
+    font-family: 'Inconsolata', monospace;;
   }
   
   .profile::before,
@@ -421,25 +431,9 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .nav-item{
   font-size: 25px;
-  font-family: "consolas";
+  font-family: 'Inconsolata', monospace;;
   margin-bottom: 0;
 }
 
@@ -461,6 +455,10 @@ a{
   animation: text-shadow 1s;
   }
 
+#mySidenav{
+  background-color: white;
+  z-index: 999;
+}
 
 .sidenav {
   z-index: 999;
@@ -478,17 +476,19 @@ a{
 .space{
   color: #ff003c;
   margin-top: 20px;
+  font-weight: 600;
 }
 .space2{
   color: #000000;
   margin-top: 20px;
+  font-weight: 600;
 }
 
 /* Sidenav menu links */
 .sidenav a {
   text-decoration: none;
   font-size: 20px;
-  font-family: 'consolas';
+  font-family: 'Inconsolata', monospace;;
   display: block;
   transition: 0.3s;
   margin-left: 15px;  
@@ -592,7 +592,7 @@ color: #00eeff;
     }
     .nav-item{
       font-size: 20px;
-      font-family: "consolas";
+      font-family: 'Inconsolata', monospace;
       margin-bottom: 0;
     }
   
@@ -601,14 +601,14 @@ color: #00eeff;
       background-clip: border-box;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: "consolas";
+      font-family: 'Inconsolata', monospace;
       font-size: 15px;
     }
     
     .copyright{
       text-align:right;
       color: #ff003c;
-      font-family: 'consolas';
+      font-family: 'Inconsolata', monospace;;
       font-size: 15px;
     }
   
@@ -652,7 +652,7 @@ color: #00eeff;
   
     .nav-item{
       font-size: 15px;
-      font-family: "consolas";
+      font-family: 'Inconsolata', monospace;
       margin-bottom: 0;
       margin-left: 10px;
     }
@@ -663,7 +663,7 @@ color: #00eeff;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: "consolas";
+    font-family: 'Inconsolata', monospace;
     font-size: 15px;
     text-align: left;
   }
@@ -671,7 +671,7 @@ color: #00eeff;
   .copyright{
     text-align:right;
     color: #ff003c;
-    font-family: 'consolas';
+    font-family: 'Inconsolata', monospace;;
     font-size: 15px;
   
   }
@@ -713,7 +713,8 @@ color: #00eeff;
 #openBtn{
   text-decoration: none;
   display: block;
-  margin-left: 20px;
+  position: fixed;
+  z-index: 9;
 
 }
 
@@ -723,7 +724,7 @@ color: #00eeff;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "consolas";
+  font-family: 'Inconsolata', monospace;
   font-size: 15px;
   text-align: center;
 }
@@ -731,7 +732,7 @@ color: #00eeff;
 .copyright{
   text-align:center;
   color: #ff003c;
-  font-family: 'consolas';
+  font-family: 'Inconsolata', monospace;;
   font-size: 15px;
 
 }
@@ -739,7 +740,4 @@ color: #00eeff;
 
 }
 
-  
-  
-  
   
